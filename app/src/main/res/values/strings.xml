@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Jogo do Galo</string>
+    <string name="jogo_do_galo">Jogo do Galo</string>
+    <string name="jogador">Jogador:</string>
+    <string name="player">Player</string>
+    <string name="game_over">GAME OVER</string>
+    <string name="insert_coin">INSERT COIN</string>
+    <string name="message">MESSAGE</string>
+    <string name="single_player">Single Player</string>
+    <string name="multi_player">Multi Player</string>
+    <string name="select">SELECT</string>
+</resources>

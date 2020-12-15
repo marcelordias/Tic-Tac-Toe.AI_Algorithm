@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/jogadorId"
+        android:layout_width="227dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="@string/jogador"
+        android:textAlignment="textEnd"
+        android:textColor="#8E24AA"
+        android:textSize="25sp" />
+
+    <GridView
+        android:id="@+id/TabuleiroId"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_below="@+id/jogadorId"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:verticalSpacing="30dp" />
+
+    <ImageView
+        android:id="@+id/imageViewPlayer"
+        android:layout_width="54dp"
+        android:layout_height="48dp"
+        android:layout_above="@+id/TabuleiroId"
+        android:layout_marginStart="-1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/jogadorId"
+        android:contentDescription="@string/player" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifgameOver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TabuleiroId"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/game_over"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/buttonRestartGame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textViewGameOverMessage"
+        android:layout_marginTop="23dp"
+        android:backgroundTint="#BF360C"
+        android:fontFamily="@font/press_start_2p"
+        android:text="@string/insert_coin"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textViewGameOverMessage"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_below="@+id/gifgameOver"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="@string/message"
+        android:textAlignment="center"
+        android:textColor="#8E24AA"
+        android:textSize="25sp"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</RelativeLayout>

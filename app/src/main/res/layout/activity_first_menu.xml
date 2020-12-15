@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".firstMenu">
+
+    <Button
+        android:id="@+id/buttonS"
+        android:layout_width="412dp"
+        android:layout_height="319dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#1E88E5"
+        android:fontFamily="@font/press_start_2p"
+        android:text="@string/single_player"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonM"
+        android:layout_width="412dp"
+        android:layout_height="319dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#F4511E"
+        android:fontFamily="@font/press_start_2p"
+        android:text="@string/multi_player"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/press_start_2p"
+        android:text="@string/select"
+        android:textColor="#8E24AA"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonS"
+        app:layout_constraintVertical_bias="0.29" />
+</androidx.constraintlayout.widget.ConstraintLayout>
